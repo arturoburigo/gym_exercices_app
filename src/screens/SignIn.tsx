@@ -3,15 +3,15 @@ import { Center, VStack, Image, Text, Heading, ScrollView } from "native-base";
 import LogoImg from '@assets/logo.svg'
 import BackgroundImg from '@assets/background.png'
 import { Input } from "@components/Input";
-import { Button } from "@components/Button";
+import { Button } from "@components/Button"
 
 export function SignIn() {
     return (
         <ScrollView contentContainerStyle={{flexGrow: 1}} showsVerticalScrollIndicator={false}>
             <VStack flex={1} bg={"gray.700"} px={10}>
                 <Image 
-                    source={BackgroundImg} 
-                    alt="People training" 
+                    source={BackgroundImg}   
+                    alt="People training"
                     resizeMode="contain" 
                     position="absolute"
                 />
