@@ -4,12 +4,17 @@ import { ScreenHeader } from "@components/ScreenHeader";
 import { UserPhoto } from "@components/UserPhoto";
 import { VStack, Text, ScrollView, Center, Skeleton, Heading } from "native-base";
 import { useState } from "react";
+import * as ImagePicker from 'expo-image-picker'
 import { TouchableOpacity } from "react-native";
 
 const PHOTO_SIZE = 33
 
 export function Profile() {
   const [photoIsLoading, setPhotoIsLoading] = useState(false)
+
+  async function handleUserPhotoSelect() {
+    await ImagePicker.launchImageLibraryAsync();
+  }
 
   return (
     <VStack flex={1}>
@@ -32,7 +37,7 @@ export function Profile() {
                   alt="User Photo" 
                 />
             }
-            <TouchableOpacity activeOpacity={0.7}>
+            <TouchableOpacity activeOpacity={0.7} onPress={handleUserPhotoSelect}>
               <Text color={"green.500"} fontSize={"md"} fontWeight={"bold"} mt={2} mb={8}>
                 Change Photo
               </Text>
@@ -51,9 +56,11 @@ export function Profile() {
           </Center>
 
           <VStack px={10} mt={8} mb={9}>
-            <Heading color={"gray.200"} fontSize={"md"} mb={2}>
-              Alterar senha
-            </Heading>
+            <TouchableOpacity activeOpacity={0.7} onPress={handleUserPhotoSelect}>
+              <Heading color={"gray.200"} fontSize={"md"} mb={2}>
+                Alterar senha
+              </Heading>
+            </TouchableOpacity>
             <Input 
               bg={"gray.600"}
               placeholder="Password"
