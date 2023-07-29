@@ -15,7 +15,7 @@ export function HomeHeader() {
 
       <VStack flex={1}>
         <Text color={"gray.100"} fontSize={"md"}>
-          Olá,
+          Hello,
         </Text>
         <Heading color={"gray.100"} fontSize={"md"} fontFamily={"Roboto_700Bold"}>
           Arturo Burigo

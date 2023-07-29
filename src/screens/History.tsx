@@ -6,11 +6,11 @@ import { useState } from "react";
 export function History() {
     const [exercises, setExercises] = useState([
       {
-        title: "26.08.22",
+        title: "07.28.2023",
         data: ["Puxada Frontal", "Remada Unilateral"]
       },
       {
-        title: "27.08.22",
+        title: "07.26.2023",
         data: ["Puxada Frontal"]
       }
     ])
@@ -18,7 +18,7 @@ export function History() {
 
   return (
     <VStack flex={1}>
-      <ScreenHeader title="Historico de exercicios"/>
+      <ScreenHeader title="Exercises History"/>
 
       <SectionList 
         sections={exercises}

@@ -86,7 +86,7 @@ export function Profile() {
             
             <Input
               bg={"gray.600"}
-              placeholder="Nome"
+              placeholder="Name"
             />
 
             <Input
@@ -99,7 +99,7 @@ export function Profile() {
           <VStack px={10} mt={8} mb={9}>
             <TouchableOpacity activeOpacity={0.7} onPress={handleUserPhotoSelect}>
               <Heading color={"gray.200"} fontSize={"md"} mb={2}>
-                Alterar senha
+                Change password
               </Heading>
             </TouchableOpacity>
             <Input 
@@ -120,7 +120,7 @@ export function Profile() {
               secureTextEntry
             />
 
-            <Button title="Atualizar" mt={2}/>
+            <Button title="Done" mt={2}/>
 
           </VStack>
         </ScrollView>
