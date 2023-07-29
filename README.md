@@ -47,5 +47,5 @@ npx expo start
 <!-- CONTACT -->
 ## Contact
 
-LinkedIn - [Arturo Burigo](https://www.linkedin.com/in/arturoburigo/)
+LinkedIn - [Arturo Burigo](https://www.linkedin.com/in/arturoburigo/) <br/>
 Instagram - [@arturoburigo](https://www.instagram.com/arturoburigo/)
